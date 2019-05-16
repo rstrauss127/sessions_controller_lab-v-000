@@ -12,8 +12,4 @@ class SessionsController < ApplicationController
   def destroy
     session.delete :name
   end
-
-  private
-  def sessions_params
-    params
 end
