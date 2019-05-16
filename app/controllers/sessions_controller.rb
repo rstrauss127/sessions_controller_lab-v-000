@@ -1,20 +1,19 @@
 class SessionsController < ApplicationController
 
   def new
-    
+
   end
 
-  def create 
+  def create
     session[:name] = params[:name]
     redirect_to '/'
-  end 
+  end
 
   def destroy
     session.delete :name
-    
   end
 
-  private 
+  private
   def sessions_params
     params
 end
